@@ -22,6 +22,8 @@ public class Controller {
         rdoAvg.setToggleGroup(toggleGroup);
         rdoMax.setToggleGroup(toggleGroup);
         rdoMin.setToggleGroup(toggleGroup);
+
+        rdoTotal.setSelected(true);
     }
 
     // Method to calculate
