@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="CENTER" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml" fx:controller="Controller">
+    <!-- Displaying the title -->
+    <Label text="Excel Functions" GridPane.rowIndex="0" GridPane.columnSpan="4"/>
+    <!-- Instructing the user to input numbers -->
+    <Label text="Enter your numbers separated by spaces" GridPane.rowIndex="1" GridPane.columnSpan="4"/>
+    <!-- Text field for user input -->
+    <TextField fx:id="txtNum" GridPane.rowIndex="2" GridPane.columnSpan="4"/>
+    <!-- RadioButtons for operations -->
+    <RadioButton text="Total" GridPane.rowIndex="3" GridPane.columnIndex="0" fx:id="rdoTotal"/>
+    <RadioButton text="Average" GridPane.rowIndex="3" GridPane.columnIndex="1" fx:id="rdoAvg"/>
+    <RadioButton text="Maximum" GridPane.rowIndex="3" GridPane.columnIndex="2" fx:id="rdoMax"/>
+    <RadioButton text="Minimum" GridPane.rowIndex="3" GridPane.columnIndex="3" fx:id="rdoMin"/>
+    <!-- Button to calculate -->
+    <Button text="Calculate" onAction="#calculate" GridPane.rowIndex="4" GridPane.columnSpan="4"/>
+    <!-- Display the result of the calculation -->
+    <Label text="Result:" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+    <!-- Text field to calculation result -->
+    <TextField fx:id="resultOutput" GridPane.rowIndex="5" GridPane.columnIndex="1" GridPane.columnSpan="3"/>
+</GridPane>
